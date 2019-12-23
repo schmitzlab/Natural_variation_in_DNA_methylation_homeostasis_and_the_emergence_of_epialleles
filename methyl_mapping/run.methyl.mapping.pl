@@ -22,7 +22,7 @@ GetOptions(
 				) or &USAGE;
 &USAGE unless ($fIn and $fOut);
 
-sub USAGE {#
+sub USAGE {##
 	my $usage=<<"USAGE";
 ProgramName:
 Version:	$version
@@ -105,7 +105,7 @@ sub ABSOLUTE_DIR{ #$pavfile=&ABSOLUTE_DIR($pavfile);
 #######################################################################################
 
 sub max{#&max(lists or arry);
-	#ÇóÁÐ±íÖÐµÄ×î´óÖµ
+	#æ±‚åˆ—è¡¨ä¸­çš„æœ€å¤§å€¼
 	my $max=shift;
 	my $temp;
 	while (@_) {
@@ -115,10 +115,10 @@ sub max{#&max(lists or arry);
 	return $max;
 }
 
-#######################################################################################
+########################################################################################
 
 sub min{#&min(lists or arry);
-	#ÇóÁÐ±íÖÐµÄ×îÐ¡Öµ
+	#æ±‚åˆ—è¡¨ä¸­çš„æœ€å°å€¼
 	my $min=shift;
 	my $temp;
 	while (@_) {
@@ -131,7 +131,7 @@ sub min{#&min(lists or arry);
 #######################################################################################
 
 sub revcom(){#&revcom($ref_seq);
-	#»ñÈ¡×Ö·û´®ÐòÁÐµÄ·´Ïò»¥²¹ÐòÁÐ£¬ÒÔ×Ö·û´®ÐÎÊ½·µ»Ø¡£ATTCCC->GGGAAT
+	#èŽ·å–å­—ç¬¦ä¸²åºåˆ—çš„åå‘äº’è¡¥åºåˆ—ï¼Œä»¥å­—ç¬¦ä¸²å½¢å¼è¿”å›žã€‚ATTCCC->GGGAAT
 	my $seq=shift;
 	$seq=~tr/ATCGatcg/TAGCtagc/;
 	$seq=reverse $seq;
