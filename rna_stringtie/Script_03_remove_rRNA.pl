@@ -20,7 +20,7 @@ while ($line = <AA>) {
     $rRNA_seq{$10} = 'yes';
 }
 
-## remove r/tRNA reads 
+### remove r/tRNA reads 
 while ($line1 = <BB>) {
 
     $line2 = <BB>;
