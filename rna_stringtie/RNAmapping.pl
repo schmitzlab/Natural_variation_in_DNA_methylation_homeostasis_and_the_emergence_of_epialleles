@@ -22,7 +22,7 @@ GetOptions(
 				) or &USAGE;
 &USAGE unless ($fIn and $fOut);
 
-sub USAGE {##
+sub USAGE {###
 	my $usage=<<"USAGE";
 ProgramName:
 Version:	$version
