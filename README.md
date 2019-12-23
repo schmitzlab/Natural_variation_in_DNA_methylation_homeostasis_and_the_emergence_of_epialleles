@@ -1,5 +1,6 @@
 # Natural_variation_in_DNA_methylation_homeostasis_and_the_emergence_of_epialleles
-These were main scripts used in the study, For questions, contact Yinwen Zhang at yz46606@uga.edu
+These were main scripts used in the study. 
+For questions, contact Yinwen Zhang at yz46606@uga.edu
 ## methyl_mapping
 this folder include scripts used for methyl-seq data analysis.
 ## rna_sringtie
